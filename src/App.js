@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import ClassCounterLifeCycle from './components/ClassCounterLifeCycle';
+import ClassCounters from './components/ClassCounters';
+import ClassIntervalCounter from './components/ClassIntervalCounter';
+import ClassMousePositionUpdateOnlyOnce from './components/ClassMousePositionUpdateOnlyOnce';
+import HookCounter from './components/HookCounter';
+import HookCounterArray from './components/HookCounterArray';
+import HookCounterComlex from './components/HookCounterComlex';
+import HookCounterObject from './components/HookCounterObject';
+import HookIntervalCounter from './components/HookIntervalCounter';
+import HookMousePositionUseEffect from './components/HookMousePositionUseEffect';
+import HookMouseUseEffectCleanup from './components/HookMouseUseEffectCleanup';
+import HookUseEffect from './components/HookUseEffect';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ClassCounters />
+      <HookCounter />
+      <HookCounterComlex />
+      <HookCounterObject />
+      <HookCounterArray />
+      <ClassCounterLifeCycle />
+      <HookUseEffect />
+      <ClassMousePositionUpdateOnlyOnce />
+      <HookMousePositionUseEffect />
+      <HookMouseUseEffectCleanup />
+      <ClassIntervalCounter />
+      <HookIntervalCounter />
     </div>
   );
 }
